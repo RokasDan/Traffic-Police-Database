@@ -1,0 +1,52 @@
+<!--This is a home page for the officer where he can navigate to
+different to different operations of the website such as report
+creation, or people search and so on!-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Here I am initiating all of the css sheets that i have prepared for this website-->
+    <meta charset="UTF-8">
+    <title>Officer Home</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pager.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/containers.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/headers.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/rectangles.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/buttons.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/inputs.css">
+</head>
+<body>
+
+
+<!--Here is the container that contains all of the button links
+which the user can use to navigate around the website. It also
+displays the currently logged in user and allows him to change
+his password.-->
+
+<div class="container3">
+    <h1 class="header1">OFFICER HOME</h1>
+    <div class="rect5">
+        <div class="container4">
+            <div class="rect6">
+                <h2 id="test" class="officerName">Name</h2>
+                <a class="button9" href="officer_password_change.html" target="_self" rel="nofollow noopener">|CHANGE
+                    PASSWORD|</a>
+            </div>
+
+        </div>
+        <a class="button10" href="officer_people_search.html" target="_self" rel="nofollow noopener">PEOPLE SEARCH</a>
+        <a class="button15" href="officer_vehicle_search.html" target="_self" rel="nofollow noopener">VEHICLE SEARCH</a>
+        <a class="button16" href="officer_offence_list.html" target="_self" rel="nofollow noopener">OFFENCE LIST</a>
+        <a class="button17" href="officer_report_search.html" target="_self" rel="nofollow noopener">REPORT SEARCH</a>
+        <a class="button18" href="officer_create_report.html" target="_self" rel="nofollow noopener">CREATE REPORT</a>
+        <a class="button19" href="../index.html" target="_self" rel="nofollow noopener">LOGOUT</a>
+    </div>
+</div>
+
+<!--Here is the Javascript for this page which loads up the user that has logged
+in to the page! This is displayed on the upper part of the page just besides
+the main header.-->
+<script type="application/javascript" src="../scripts/officer_home.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!--This page is used for adding new vehicles to the data base.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Here I am initiating all of the css sheets that i have prepared for this website-->
+    <meta charset="UTF-8">
+    <title>Officer Home</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pager.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/containers.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/headers.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/rectangles.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/buttons.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/inputs.css">
+</head>
+<body>
+
+<!--Creating a container for the main objects displayed in the page
+such as headers and errors for example. This is the code block
+that contains all of the form elements that are used for adding
+the new vehicle. These form elements include selectors that
+allow to one choose the owner of the vehicle It also has normal
+inputs to provide model, band and color of the car!. -->
+
+<div class="container78">
+
+    <nobr><h1 class="header1">ADD NEW VEHICLE</h1></nobr>
+
+    <div class="rect15">
+
+        <div id="error-div" class="container76" style="display: block">
+            <h3 id="error-message" class="LoginErrorText" style="text-align: center;">Enter details about vehicle!</h3>
+        </div>
+
+        <!--Here is the form tag with the previously mentioned input elements -->
+
+        <form class="form1">
+
+            <label>
+                <input class="numplate" name="plate" placeholder="NUMBER PLATE"/>
+            </label>
+
+            <label>
+                <input class="carbrand" name="brand" placeholder="CAR BRAND"/>
+            </label>
+
+            <label>
+                <input class="carmodel" name="model" placeholder="ENTER MODEL"/>
+            </label>
+
+            <label>
+                <input class="carcolor" name="colour" placeholder="ENTER COLOUR"/>
+            </label>
+
+            <label>
+                <select class="peopleselect4" id="people" name="person">
+                </select>
+            </label>
+
+            <button class="button20" type="submit">CREATE</button>
+            <a class="button21" href="officer_create_report.html" target="_self" rel="nofollow noopener">BACK</a>
+        </form>
+
+    </div>
+</div>
+
+<!--This is the Javascript for the page which provides errors according to the
+responses received from a php file. If the php file detects a user error this
+javascript will display an appropriate error. Other wise it will redirect the user
+to an appropriate succession page if the addition of the vehicle was successful.
+This script also fills up the selector element in the form with appropriate chooses
+from the mysql database once the page is fully loaded!-->
+<script type="application/javascript" src="../scripts/officer_add_vehicle.js"></script>
+</body>
+</html>

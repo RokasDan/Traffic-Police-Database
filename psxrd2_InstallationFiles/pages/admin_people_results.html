@@ -1,0 +1,45 @@
+<!--This page is used for displaying the search results of the
+offenders which the user is searching for!-->
+
+<html lang="en">
+<head>
+
+    <!--Here I am initiating all of the css sheets that i have prepared for this website-->
+    <meta charset="UTF-8">
+    <title>Entrance</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pager.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/containers.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/headers.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/rectangles.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/buttons.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/inputs.css">
+</head>
+<body>
+
+<!--This is the container which contains the visual information
+of the search after the javascript works on the page. It also
+gets links from the javascript which the user can use to check
+the details of the offender!-->
+
+<div class="container7">
+    <h1 class="header1">PEOPLE RESULTS</h1>
+    <div class="rect18">
+        <a class="button49" href="admin_people_search.html" target="_self" rel="nofollow noopener">BACK TO SEARCH</a>
+    </div>
+    <nobr><div class="rect19">
+        <div class="container8"><h6 class="header13"> ---ID---|</h6></div>
+        <div class="container9"><h6 class="header13">|----FIRST NAME----|</h6></div>
+        <div class="container10"><h6 class="header13">|----LAST NAME----|</h6></div>
+        <div class="container11"><h6 class="header13">|---LICENCE NUMBER---|</h6></div>
+        <div class="container12"><h6 class="header13">|LINK|</h6></div>
+
+    </div></nobr>
+    <div id="test"></div>
+</div>
+
+<!--This is the javascript that fill up the page with an appropriate offender
+information after a search key is inputted in to the search. It also provides
+the user with links to see more information about specific users!-->
+<script type="application/javascript" src="../scripts/admin_people_results.js"></script>
+</body>
+</html>

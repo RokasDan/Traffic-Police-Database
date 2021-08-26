@@ -1,0 +1,53 @@
+<!--This is the page which officers use to log in to their part of the system-->
+<html lang="en">
+<head>
+
+    <!--Here I am initiating all of the css sheets that i have prepared for this website-->
+    <meta charset="UTF-8">
+    <title>Entrance</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pager.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/containers.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/headers.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/rectangles.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/buttons.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/inputs.css">
+</head>
+
+
+<body>
+
+<!--Creating a container for the main objects displayed in the page
+such as headers and errors for example. Also in this block there
+is a form which is used to contact the php code and mysql server
+to authenticate the officer-->
+
+<div class="container1">
+    <h1 class="header1">8 BIT TRAFFIC COP</h1>
+    <div class="rect1">
+        <div id="error-div" class="container2" style="display: none">
+            <h1 id="error-message" class="LoginErrorText" style="text-align: center;">ERROR</h1>
+        </div>
+        <form class="form1">
+            <label>
+                <input class="IDinput" name="username" placeholder="ENTER ID"/>
+            </label>
+            <label>
+                <input class="PasswordInput" name="password" placeholder="ENTER PASSWORD"/>
+            </label>
+            <button class="button5" type="submit">LOGIN</button>
+            <a class="button6" href="../index.html" target="_self" rel="nofollow noopener">BACK</a>
+        </form>
+
+    </div>
+
+</div>
+
+<!--Here I am initiating the javascript code which according to the server response from
+the php file will either show an error if the authentication is unsuccessful or transfer
+ the officer to a officer home page if it is successful!-->
+
+<script type="application/javascript" src="../scripts/officer_login.js"></script>
+
+</body>
+
+</html>

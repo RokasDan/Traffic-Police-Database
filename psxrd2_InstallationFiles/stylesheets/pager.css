@@ -1,0 +1,15 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+@font-face{
+	src: url(../fonts/PressStart2P-Regular.ttf);
+	font-family: bit;
+}
+
+body{
+	background-image: url("../graphics/background1.png");
+}

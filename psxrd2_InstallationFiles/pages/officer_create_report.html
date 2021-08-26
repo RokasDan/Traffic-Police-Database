@@ -1,0 +1,76 @@
+<!--This page is used either by admins on officers to create
+new reports of incidents. The user can also add new vehicles
+and offenders in to the system via this page!-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Here I am initiating all of the css sheets that i have prepared for this website-->
+    <meta charset="UTF-8">
+    <title>Officer Home</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pager.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/containers.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/headers.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/rectangles.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/buttons.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/inputs.css">
+</head>
+<body>
+
+<!--Here is the container that contains all of the visual aspects of the page.
+In this block of code you will also find a form which contains selectors
+that allow users to select specific vehicles, offenders and type of offences
+a person can commit. There are also fields to input date and description of the
+events and buttons to navigate across the page.-->
+
+<div class="container75">
+
+    <nobr><h1 class="header1">CREATE REPORT</h1></nobr>
+
+    <div class="rect13">
+
+        <div id="error-div" class="container76" style="display: block">
+            <h3 id="error-message" class="LoginErrorText" style="text-align: center;">Select offender, vehicle and offence!</h3>
+        </div>
+        <div class="reporting">
+            <nobr><h1 class="header12">|ENTER DATE AND THE DETAILS OF THE INCIDENT|</h1></nobr>
+        </div>
+
+        <!--Here is the form for summing the report with all of the previously mentioned elements -->
+
+        <form class="form1">
+            <label>
+                <select class="peopleselect1" id="people" name="person">
+                </select>
+            </label>
+            <label>
+                <select class="peopleselect2" id="cars" name="car">
+                </select>
+            </label>
+            <label>
+                <select class="peopleselect3" id="offence" name="offences">
+                </select>
+                <input type="date" class="reportDate" name="repdate" required/>
+            </label>
+            <label>
+                <textarea class="reportdetails" name="report" id="event" placeholder="DESCRIBE THE INCIDENT"></textarea>
+            </label>
+            <button class="button20" type="submit">CREATE</button>
+            <a class="button21" href="officer_home.html" target="_self" rel="nofollow noopener">BACK</a>
+        </form>
+
+        <!--Buttons for adding new offender and vehicle entries to the database!-->
+
+        <a class="button22" href="officer_new_offender.html" target="_self" rel="nofollow noopener">NEW OFFENDER</a>
+        <a class="button23" href="officer_new_car.html" target="_self" rel="nofollow noopener">NEW VEHICLE</a>
+
+    </div>
+</div>
+
+<!--Here is where i initiate the Javascript for this page. When this page loads
+the script fills up all of the selector elements with appropriate data for the user
+to use. It also displays appropriate errors if the user doesnt fill out the form
+completely. If the report is created properly the user will be directed to a new page!-->
+<script type="application/javascript" src="../scripts/officer_report_create.js"></script>
+</body>
+</html>

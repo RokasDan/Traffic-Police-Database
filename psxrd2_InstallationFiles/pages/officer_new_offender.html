@@ -1,0 +1,78 @@
+<!--This page is used for adding new offenders to the data base.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Here I am initiating all of the css sheets that i have prepared for this website-->
+    <meta charset="UTF-8">
+    <title>Officer Home</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pager.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/containers.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/headers.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/rectangles.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/buttons.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/inputs.css">
+</head>
+<body>
+
+<!--Creating a container for the main objects displayed in the page
+such as headers and errors for example. This is the code block
+that contains all of the form elements that are used for adding
+the new offender. These form elements include data input that
+allow one to choose date of birth of the offender It also has normal
+inputs to provide name, surname and address and other important
+details of the offender!. -->
+
+<div class="container78">
+
+    <nobr><h1 class="header1">ADD NEW OFFENDER</h1></nobr>
+
+    <div class="rect14">
+
+        <div id="error-div" class="container76" style="display: block">
+            <h3 id="error-message" class="LoginErrorText" style="text-align: center;">Enter details about offender!</h3>
+        </div>
+
+        <div class="reporting2">
+            <nobr><h1 class="header12">|ENTER DATE OF BIRTH|</h1></nobr>
+        </div>
+
+        <!--Here is the form tag with the previously mentioned input elements -->
+
+        <form class="form1">
+
+            <label>
+                <input class="firstname" name="offendername" placeholder="FIRST NAME"/>
+            </label>
+
+            <label>
+                <input class="lastname" name="offendersur" placeholder="LAST NAME"/>
+            </label>
+
+            <label>
+                <textarea class="addressdetails" name="address" placeholder="RECORD ADDRESS"></textarea>
+            </label>
+
+            <label>
+                <textarea class="licensedetails" name="license" placeholder="ENTER LICENCE NUMBER"></textarea>
+            </label>
+
+            <label>
+                <input type="date" class="BirthDate" name="DBO" required/>
+            </label>
+
+            <button class="button20" type="submit">CREATE</button>
+            <a class="button21" href="officer_create_report.html" target="_self" rel="nofollow noopener">BACK</a>
+        </form>
+
+    </div>
+</div>
+
+<!--This is the Javascript for the page which provides errors according to the
+responses received from a php file. If the php file detects a user error while filling the form this
+javascript will display an appropriate error. Other wise it will redirect the user
+to an appropriate succession page if the addition of the offender was successful!-->
+
+<script type="application/javascript" src="../scripts/officer_new_offender.js"></script>
+</body>
+</html>

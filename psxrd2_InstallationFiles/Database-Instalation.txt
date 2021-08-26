@@ -1,0 +1,176 @@
+DROP TABLE IF EXISTS Officers;
+CREATE TABLE Officers (
+Username varchar(255) NOT NULL,
+Password varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE Officers
+  ADD PRIMARY KEY (Username),
+  ADD UNIQUE (Username),
+  ADD UNIQUE (Password);
+  
+INSERT INTO Officers (Username, Password)
+VALUES ('Regan', 'plod123'),
+	   ('Carter', 'fuzz42');
+  
+# Creating an Officers table to store passwords and user names of officers.
+
+DROP TABLE IF EXISTS Admins;
+CREATE TABLE Admins (
+Username varchar(255) NOT NULL,
+Password varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE Admins
+  ADD PRIMARY KEY (Username),
+  ADD UNIQUE (Username),
+  ADD UNIQUE (Password);
+  
+INSERT INTO Admins (Username, Password)
+VALUES ('Poopty', 'droopt'),
+	('haskins', 'copper99'),
+	   ('Rokas', '108');
+  
+# Creating an Admins table to store passwords and user names of Admins.
+
+DROP TABLE IF EXISTS Unknown;
+CREATE TABLE Unknown ( 
+Unknown_id bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+first_name varchar(255) NOT NULL, 
+last_name varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO Unknown (first_name, last_name) 
+VALUES ("UNKNOWN", "UNKNOWN");
+
+# Creating an Unknown table to store unknown name values.
+
+DROP TABLE IF EXISTS People;
+CREATE TABLE People ( 
+people_id bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+first_name varchar(255) NOT NULL, 
+last_name varchar(255) NOT NULL, 
+address varchar(255) DEFAULT NULL, 
+date_of_birth date NOT NULL,  
+license_number varchar(25) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE People   
+ADD UNIQUE (people_id),   
+ADD UNIQUE (license_number);
+
+INSERT INTO People (first_name, last_name, address, date_of_birth, license_number) 
+VALUES("Luke", "Perkins", "32 The Lane - Awesworth", "1990-12-21", "LUKAS34214687465"),
+("Gordon", "Luce", "11  Western Terrace St - Nottingham","1991-07-11", "GORDO74212685377"),
+("James", "Bruke",  "38  Newcastle St - Coventry","1997-04-20", "JAMES74210575375"),       
+("James", "Torks",  "65  Balford St - Birmingham","1991-06-18", "JAMES74280496385"),       
+("James", "Lyko",  "9  Tennis St - London","1994-12-29", "ROBER74977455156"),       
+("Angle", "Gille",  "26  Train St - Crew","1994-03-03", "ANGLE74347462337"),       
+("Poopty", "Scop",  "Unkown St - Wakanda","1997-11-26", "POOPT74113472877"),       
+("Droopty", "Poo",  "11 Medziotoju St - Alytus","1996-09-23", "DOOPT74642579865"),       
+("Gilbert", "Doo",  "32 Laisves Aleja St - Vilnius","1998-03-16", "GILBE74642595725"),       
+("Droopty", "JamePoo",  "22 Danger St - Kaunas","1996-09-23", "DOOPWW6642579865"),       
+("Gilbert", "Poo",  "13  Main St - Oxford","1998-03-16", "GILBE78882595725"),       
+("Pink Guy", "The Filthy",  "69  Man Cave - LA","1999-03-16", "PINK71123596575"),
+("Darius", "Dan",  "13  Secret Spot","1960-03-02", NULL),
+("Speed", "The speed",  "Time tunnel - Alaska","1980-06-16", NULL);
+
+# Creating People table to store information about convicted people.
+
+DROP TABLE IF EXISTS Cars;
+CREATE TABLE Cars (
+number_plate varchar(10) NOT NULL PRIMARY KEY,
+brand varchar(255) NOT NULL,
+model varchar(255) DEFAULT NULL,
+colour varchar(255) NOT NULL,
+owner bigint DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE Cars
+  ADD UNIQUE (number_plate),
+  ADD FOREIGN KEY (owner) REFERENCES People(people_id); 
+  
+INSERT INTO Cars (number_plate, brand, model, colour, owner)
+VALUES("796A32V", "BMW", "X6", "BLUE", 1),
+      ("7HKA38Q", "AUDI", "Q5", "WHITE", 1),
+      ("49BB32V", "VOLVO", "XC90", "GREEN", 2),
+      ("22POOPV", "VOLKSWAGEN", "POLO", "BLUE", 3),
+      ("32PO74W", "VOLKSWAGEN", "POLO", "GREEN", 4),
+      ("87P69PV", "OPEL", "ASTRA", "RED", 5),
+      ("12GR32V", "BMW", "I8", "RED", 6),
+      ("8WW12QR", "MINI", "CLUBMAN", "RED", 7),
+      ("GWE1299", "LAMBORGHINI", "URUS", "YELLOW", 7),
+      ("WTEPO69", "JEEP", "WRANGLER", "GREEN", 8),
+      ("PRETR10", "AUDI", "E_TRON", "WHITE", 9),
+      ("DOPOR37", "AUDI", "TT", "SILVER", 10),
+      ("44PTD67", "PEUGEOT", "3008", "SILVER", 3),
+      ("PQ44DTR", "VOLVO", "C30", "BROWN", 8),
+      ("DE45DYQ", "BMW", "X6", "SILVER", 9),
+      ("PQ4354R", "FERRARI", NULL, "RED", 10),
+      ("DFY354R", "BATCAR", NULL, "BLACK", 10),
+      ("DFY393H", "VOLKSWAGEN", "beetle", "YELLOW", 11),
+      ("FGHw93H", "Pink Stealth", NULL, "PINK", 12),
+      ("DJKY998", "BMW", "V8", "BLACK", NULL),
+      ("89HTTTH", "CYBERTRUCK", "TRUCK", "GREY", NULL);
+
+# Creating Cars table to store information about convicted people cars.
+
+DROP TABLE IF EXISTS Offence;
+CREATE TABLE Offence (
+  Offence_ID bigint PRIMARY KEY AUTO_INCREMENT,
+  description varchar(50) NOT NULL,
+  maxFine int(11) NOT NULL,
+  maxPoints int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO Offence (description, maxFine, maxPoints) VALUES
+('Speeding', 1000, 3),
+('Speeding on a motorway', 2500, 6),
+('Seat belt offence', 500, 0),
+('Illegal parking', 500, 0),
+('Drink driving', 10000, 11),
+('Driving without a licence', 10000, 0),
+('Traffic light offences', 1000, 3),
+('Cycling on pavement', 500, 0),
+('Failure to have control of vehicle', 1000, 3),
+('Dangerous driving', 1000, 11),
+('Careless driving', 5000, 6),
+('Dangerous cycling', 2500, 0);
+
+# Creating Offence table to store information about offences people can commit.
+
+DROP TABLE IF EXISTS Reports;
+CREATE TABLE Reports (
+report_id bigint NOT NULL PRIMARY KEY AUTO_INCREMENT,
+author varchar(255) NOT NULL,
+car_id varchar(10) DEFAULT NULL,
+people_id bigint DEFAULT NULL,
+offence_id bigint NOT NULL,
+fine_issued varchar(255) DEFAULT NULL,
+points_issued varchar(255) DEFAULT NULL,
+report_date date NOT NULL,
+details varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE Reports
+  ADD FOREIGN KEY (car_id) REFERENCES cars(number_plate),
+  ADD FOREIGN KEY (people_id) REFERENCES People(people_id),
+  ADD FOREIGN KEY (offence_id) REFERENCES Offence(Offence_ID);
+
+INSERT INTO Reports (author, car_id, people_id, offence_id, fine_issued, points_issued, report_date, details) 
+VALUES ("Carter", "12GR32V", 6, 1, 600, 2, "2018-07-23", "Speeded at a local school area going over 80 miles per hour!"),
+       ("Carter", "22POOPV", 3, 2, 1000, 3, "2017-12-03", "Speeded at on a highway, tailgating ongoing traffic!"),
+       ("Carter", "32PO74W", 4, 3, NULL, NULL, "2020-03-22", "Drive drove without a seat belt on, driver has been issued a warning!"),
+       ("Carter", "44PTD67", 3, 4, 100, NULL,"2019-06-12", "Parking on a handicaped zone with no permit!"),
+       ("Carter", "49BB32V", 2, 5, 1500, 5,"2015-01-08", "Driver was stopped after suspected of intoxication, driver was found to be drunk once stopped!"),
+       ("Regan", "796A32V", 1, 6, 250, NULL,"2011-07-02", "Driver was stopped on routen check, licence was expiered and non valid!"),
+       ("Regan", "7HKA38Q", 1, 7, 400, NULL,"2012-04-01", "Driver did not stop on a red light!"),
+       ("Regan", "87P69PV", 5, 9, 100, NULL,"2016-02-11", "Driver failed to control the veichle on a snow day!"),
+       ("Regan", "89HTTTH", NULL, 4, 200, NULL,"2020-11-01", "Car left in the middle of a tunnel entarance!"),
+       ("Regan", "DJKY998", NULL, 2, NULL, NULL,"2021-00-01", "Unknown driver speeding on a highway going way ower 120 miles mark!"),
+       ("Regan", NULL, 13, 8, NULL, NULL,"2021-00-02", "A too young idividual drove his push bike on a road!"),
+       ("Carter", NULL, 14, 8, NULL, NULL,"2021-00-02", "A person by the name of SPEED drives on a road with his bike going on unbelievable speed taking over all of the cars he encouters!");
+       
+	   
+
+# Creating Reports table to store information about offences people have commited.

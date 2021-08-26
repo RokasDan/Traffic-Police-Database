@@ -1,0 +1,41 @@
+<!--This page is for displaying details of the offence-->
+<html lang="en">
+<head>
+
+    <!--Here I am initiating all of the css sheets that i have prepared for this website-->
+    <meta charset="UTF-8">
+    <title>Entrance</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pager.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/containers.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/headers.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/rectangles.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/buttons.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/inputs.css">
+</head>
+<body>
+
+<!--Here are the elements that contain the description of the offence
+after the javascript works on this page div with the id of results
+will get more html code from the php response which will fill up
+the page with appropriate information according to the id of an
+offence which the user has chosen to view!-->
+
+<div class="container7">
+    <h1 class="header1">OFFENCES LIST</h1>
+    <div class="rect18">
+        <a class="button49" href="admin_home.html" target="_self" rel="nofollow noopener">BACK TO HOME</a>
+    </div>
+    <nobr><div class="rect19">
+        <div class="container13"><h6 class="header13"> ---ID---|</h6></div>
+        <div class="container14"><h6 class="header13">|------------------------DESCRIPTION------------------------|</h6></div>
+        <div class="container15"><h6 class="header13">|DETAILS|</h6></div>
+
+    </div></nobr>
+    <div id="test"></div>
+</div>
+
+<!--Here i am initiating the javascript code which fills up the page
+with appropriate offence details from the mysql server via a php script-->
+<script type="application/javascript" src="../scripts/admin_offence_results.js"></script>
+</body>
+</html>

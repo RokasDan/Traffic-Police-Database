@@ -1,0 +1,335 @@
+@font-face{
+	src: url(../fonts/PressStart2P-Regular.ttf);
+	font-family: bit;
+}
+
+.IDinput{
+	background: #9CC3D5FF;
+	width: 50%;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -20%);
+	position: absolute;
+	height: 30px;
+	font-size: 15pt;
+	font-family: bit, serif;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+	padding: 20px;
+}
+
+.PasswordInput{
+	background: #9CC3D5FF;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	height: 30px;
+	font-size: 15pt;
+	font-family: bit, serif;
+	text-align: center; 
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+	padding: 20px;
+}
+
+.PasswordCheck{
+	background: #9CC3D5FF;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	font-size: 13pt;
+	height: 30px;
+	font-family: bit, serif;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+	padding: 20px;
+}
+
+.licensenumber{
+	background: #9CC3D5FF;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	height: 58px;
+	font-size: 15pt;
+	font-family: bit, serif;
+	text-align: center;
+	border-style: solid;
+	border-color: #8C5E00;
+	border-width: 5px;
+	padding: 20px;
+}
+
+.peoplename{
+	background: #9CC3D5FF;
+	width: 65%;
+	top: 33%;
+	left: 50%;
+	transform: translate(-50%, -33%);
+	position: absolute;
+	height: 25%;
+	font-size: 15pt;
+	font-family: bit, serif;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+	padding: 20px;
+}
+
+.peopleselect1{
+	border: 5px solid black;
+	background: aqua;
+	width: 400px;
+	height: 55px;
+	padding: 15px;
+	position: absolute;
+	font-family: bit, serif;
+	top: 10%;
+	left: 25%;
+	transform: translate(-25%, -10%);
+}
+
+.peopleselect2{
+	border: 5px solid black;
+	background: antiquewhite;
+	width: 400px;
+	height: 55px;
+	padding: 15px;
+	position: absolute;
+	font-family: bit, serif;
+	top: 20%;
+	left: 25%;
+	transform: translate(-25%, -20%);
+}
+
+.peopleselect3{
+	border: 5px solid black;
+	background: cadetblue;
+	width: 600px;
+	height: 55px;
+	padding: 15px;
+	position: absolute;
+	font-family: bit, serif;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+}
+
+.reportDate{
+	background: #9CC3D5FF;
+	width: 250px;
+	height: 55px;
+	top: 50%;
+	left: 20%;
+	transform: translate(-20%, -50%);
+	position: absolute;
+	font-size: 12pt;
+	font-family: bit, serif;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+}
+
+.reportdetails{
+	border: 5px solid black;
+	background: #9CC3D5FF;
+	font-family: bit, serif;
+	font-size: 14pt;
+	width: 300px;
+	height: 250px;
+	resize: none;
+	padding: 5px;
+	top: 67%;
+	left: 80%;
+	transform: translate(-80%, -67%);
+	position: absolute;
+}
+
+.firstname{
+	background: #9CC3D5FF;
+	width: 300px;
+	top: 12%;
+	left: 10%;
+	transform: translate(-10%, -12%);
+	position: absolute;
+	height: 30px;
+	font-size: 15pt;
+	font-family: bit, serif;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+	padding: 10px;
+}
+
+.lastname {
+	background: #9CC3D5FF;
+	width: 300px;
+	top: 12%;
+	left: 90%;
+	transform: translate(-90%, -12%);
+	position: absolute;
+	height: 30px;
+	font-size: 15pt;
+	font-family: bit, serif;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+	padding: 10px;
+}
+
+.addressdetails{
+	border: 5px solid black;
+	background: #9CC3D5FF;
+	font-family: bit, serif;
+	font-size: 14pt;
+	width: 300px;
+	height: 200px;
+	resize: none;
+	padding: 10px;
+	top: 40%;
+	left: 10%;
+	transform: translate(-10%, -40%);
+	position: absolute;
+}
+
+.licensedetails{
+	border: 5px solid black;
+	background: #9CC3D5FF;
+	font-family: bit, serif;
+	font-size: 14pt;
+	width: 300px;
+	height: 200px;
+	resize: none;
+	padding: 10px;
+	top: 40%;
+	left: 90%;
+	transform: translate(-90%, -40%);
+	position: absolute;
+}
+
+.BirthDate{
+	background: #9CC3D5FF;
+	width: 250px;
+	height: 55px;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -75%);
+	position: absolute;
+	font-size: 12pt;
+	font-family: bit, serif;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+}
+
+.numplate{
+	background: #9CC3D5FF;
+	width: 300px;
+	top: 16%;
+	left: 10%;
+	transform: translate(-10%, -16%);
+	position: absolute;
+	height: 30px;
+	font-size: 15pt;
+	font-family: bit, serif;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+	padding: 10px;
+}
+
+.carbrand{
+	background: #9CC3D5FF;
+	width: 300px;
+	top: 16%;
+	left: 90%;
+	transform: translate(-90%, -16%);
+	position: absolute;
+	height: 30px;
+	font-size: 15pt;
+	font-family: bit, serif;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+	padding: 10px;
+}
+
+.carmodel{
+	background: #9CC3D5FF;
+	width: 300px;
+	top: 35%;
+	left: 10%;
+	transform: translate(-10%, -35%);
+	position: absolute;
+	height: 30px;
+	font-size: 15pt;
+	font-family: bit, serif;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+	padding: 10px;
+}
+
+.carcolor{
+	background: #9CC3D5FF;
+	width: 300px;
+	top: 35%;
+	left: 90%;
+	transform: translate(-90%, -35%);
+	position: absolute;
+	height: 30px;
+	font-size: 15pt;
+	font-family: bit, serif;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+	padding: 10px;
+}
+
+.peopleselect4{
+	border: 5px solid black;
+	background: aqua;
+	width: 400px;
+	height: 55px;
+	padding: 15px;
+	position: absolute;
+	font-family: bit, serif;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -55%);
+}
+
+.reportdetails5{
+	border: 5px solid black;
+	background: #9CC3D5FF;
+	font-family: bit, serif;
+	font-size: 14pt;
+	width: 500px;
+	height: 150px;
+	resize: none;
+	padding: 5px;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -40%);
+	position: absolute;
+}

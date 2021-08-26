@@ -1,0 +1,44 @@
+<!--This page displays the vehicles that after a specific
+search key is inputted in to the search!-->
+<html lang="en">
+<head>
+
+    <!--Here I am initiating all of the css sheets that i have prepared for this website-->
+    <meta charset="UTF-8">
+    <title>Entrance</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pager.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/containers.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/headers.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/rectangles.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/buttons.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/inputs.css">
+</head>
+<body>
+
+<!--This is the container that contains visual elements of the page!
+After the page loads up the div with id test gets filled up with vehicles
+that the search finds after mysql database is queried with the key
+that has been entered.-->
+
+<div class="container7">
+    <h1 class="header1">VEHICLE RESULTS</h1>
+    <div class="rect18">
+        <a class="button49" href="admin_vehicle_search.html" target="_self" rel="nofollow noopener">BACK TO SEARCH</a>
+    </div>
+    <nobr><div class="rect19">
+        <div class="container8"><h6 class="header13"> |-PLATE-|</h6></div>
+        <div class="container9"><h6 class="header13">|----CAR BRAND----|</h6></div>
+        <div class="container10"><h6 class="header13">|----CAR COLOUR----|</h6></div>
+        <div class="container11"><h6 class="header13">|----OWNER NAME----|</h6></div>
+        <div class="container12"><h6 class="header13">|LINK|</h6></div>
+
+    </div></nobr>
+    <div id="test"></div>
+</div>
+
+<!--This is the javascript that fills up the div element with the id of test with
+the search results! The search results contain the links to the specific vehicle
+details that mysql query finds with a specific search key entered!-->
+<script type="application/javascript" src="../scripts/officer_vehicle_results.js"></script>
+</body>
+</html>

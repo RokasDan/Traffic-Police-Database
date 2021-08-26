@@ -1,0 +1,36 @@
+<!--This page is for displaying search results of the offence-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Here I am initiating all of the css sheets that i have prepared for this website-->
+    <meta charset="UTF-8">
+    <title>Entrance</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pager.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/containers.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/headers.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/rectangles.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/buttons.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/inputs.css">
+</head>
+<body>
+
+<!--Here are the elements that contain the description of the offence
+after the javascript works on this page div with the id of results
+will get more html code from the php response which will fill up
+the page will search results of all possible offences!-->
+<div class="container42">
+    <h8 class="header11">OFFENCE DESCRIPTION</h8>
+    <div class="container33">
+        <div id="result">
+
+        </div>
+    </div>
+    <a class="button25" href="officer_offence_list.html" target="_self" rel="nofollow noopener">BACK</a>
+</div>
+
+<!--Here i am initiating the javascript code which fills up the page
+with search results of offences gathered from the mysql server via a php script-->
+<script type="application/javascript" src="../scripts/offence_details.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!--This page is for displaying vehicle details of the chosen
+vehicle after looking it up from the offenders profile! -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Here I am initiating all of the css sheets that i have prepared for this website-->
+    <meta charset="UTF-8">
+    <title>Entrance</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pager.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/containers.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/headers.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/rectangles.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/buttons.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/inputs.css">
+</head>
+<body>
+
+<!--Here are the elements that will contain the description of the vehicle after the
+javascript works on the file and adds the details to the div with an id of result!-->
+
+<div class="container17">
+    <h1 class="header1">VEHICLE DETAILS</h1>
+    <div class="container30" id="result">
+
+    </div>
+    <a class="button25" href="javascript:history.go(-1)" target="_self" rel="nofollow noopener">BACK</a>
+</div>
+
+<!--Here is the initiation of the javascript which fills up the page with appropriate
+vehicle information which has been received from mysql database via a php file!-->
+<script type="application/javascript" src="../scripts/vehicle_results.js"></script>
+</body>
+</html>

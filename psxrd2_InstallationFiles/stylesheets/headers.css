@@ -1,0 +1,184 @@
+.LoginErrorText {
+    text-align: center;
+    font-family: bit;
+    font-size: 15px;
+    color: #ff0000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+}
+
+.header1 {
+    font-size: 40px;
+    font-family: bit;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    float: none;
+    color: #FF0000;
+}
+
+.officerName {
+    text-align: center;
+    font-family: bit;
+    font-size: 15px;
+    color: #082759;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    padding: 0;
+}
+
+.header2{
+    font-size: 12pt;
+    font-family: bit;
+    position: relative;
+    top: 50%;
+    left: 5%;
+    transform: translate(5%, -50%);
+    margin: auto;
+    float: none;
+    color: #8C5E00;
+}
+
+.header3{
+    font-size: 12pt;
+    font-family: bit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #8C5E00;
+}
+
+.header4{
+    font-size: 12pt;
+    font-family: bit;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    float: none;
+    color: #8C5E00;
+}
+
+.header5{
+    font-size: 12pt;
+    font-family: bit;
+    position: relative;
+    top: 50%;
+    left: 50px;
+    margin: auto;
+    float: none;
+    color: #8C5E00;
+}
+
+.header6{
+    font-size: 12pt;
+    font-family: bit;
+    position: relative;
+    top: 50%;
+    left: 160px;
+    margin: auto;
+    float: none;
+    color: #8C5E00;
+}
+
+.header7{
+    font-size: 12pt;
+    font-family: bit;
+    position: absolute;
+    top: 50%;
+    left: 41%;
+    transform: translate(-41%, -50%);
+    margin: auto;
+    float: none;
+    color: #8C5E00;
+}
+
+.header8{
+    font-size: 12pt;
+    font-family: bit;
+    position: absolute;
+    top: 50%;
+    left: 78%;
+    transform: translate(-78%, -50%);
+    margin: auto;
+    float: none;
+    color: #8C5E00;
+}
+
+.header4{
+    font-size: 12pt;
+    font-family: bit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: darkslategray;
+}
+
+.header9{
+    font-size: 12pt;
+    font-family: bit;
+    color: darkslategray;
+}
+
+.header10{
+    overflow-wrap: break-word;
+    font-size: 12pt;
+    font-family: bit;
+    color: darkslategray;
+
+}
+
+.header11 {
+    font-size: 40px;
+    font-family: bit;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    float: none;
+    color: #FF0000;
+}
+
+.header12{
+    font-size: 12pt;
+    font-family: bit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    float: none;
+    color: #8C5E00;
+}
+
+.adminName {
+    text-align: center;
+    font-family: bit;
+    font-size: 15px;
+    color: #8C5E00;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    padding: 0;
+}
+
+.header13{
+    font-size: 12pt;
+    font-family: bit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #082759;
+}
+
